@@ -1,0 +1,202 @@
+//
+!BATTLE_0_HEADER![Prologue: Family Business]
+//
+0
+1B0M1FW.tie
+!MISSION_0_DESC!Aeron's Lesson: Transport Operations
+1
+* 1B0M2FW.tie
+!MISSION_1_DESC!Emon's Lesson: Weapons
+2
+* 1B0M3FW.tie
+!MISSION_2_DESC!Aeron's Error: Data Recovery
+3
+* 1B0M4FW.tie
+!MISSION_3_DESC!Sticking it to the Viraxos: Covert Delivery
+4
+* 1B0M5FW.tie
+!MISSION_4_DESC!Black Market Bacta: Cargo Transfer
+5
+* 1B0M6FW.tie
+!MISSION_5_DESC!Rebel Rendezvous: Aid to the Alliance
+6
+* 1B0M7FW.tie
+!MISSION_6_DESC!Nowhere To Go?: Escape Imperial Attack
+//
+!BATTLE_0A_HEADER![Joining the Rebellion]
+//
+7
+* 1B0M8W.tie
+!MISSION_7_DESC!Deep Space Strike Evaluation
+8
+* 1B0M9W.tie
+!MISSION_8_DESC!Starfighter Superiority Evaluation
+//
+!BATTLE_1_HEADER![Battle 1: Clearing the Way]
+//
+9
+* 1B1M1G.tie
+!MISSION_9_DESC!Convoy Attack
+10
+* 1B1M2FG.tie
+!MISSION_10_DESC!Rescue Uncle Antan
+11
+* 1B1M3G.tie
+!MISSION_11_DESC!Reconnaissance of Imperial Task Force
+12
+* 1B1M4G.tie
+!MISSION_12_DESC!Rescue Echo Base Prisoners
+13
+* 1B1M5FG.tie
+!MISSION_13_DESC!Recover Imperial Probe
+14
+* 1B1M6G.tie
+!MISSION_14_DESC!Stop Resupply of ISD Corrupter
+15
+* 1B1M7G.tie
+!MISSION_15_DESC!Destroy Imperial Sensor Net
+//
+!BATTLE_2_HEADER![Battle 2: Secret Weapons of the Empire]
+//
+16
+* 1B2M1G.tie
+!MISSION_16_DESC!Flight Staff Transfer
+17
+* 1B2M2G.tie
+!MISSION_17_DESC!Ensnare Imperial Prototypes
+18
+* 1B2M3FG.tie
+!MISSION_18_DESC!Kill K'Armyn Viraxo 
+19
+* 1B2M4G.tie
+!MISSION_19_DESC!Raid Production Facility
+20
+* 1B2M5G.tie
+!MISSION_20_DESC!Defend CRS Liberty
+21
+* 1B2M6G.tie
+!MISSION_21_DESC!Destroy Imperial Research Facility 
+//
+!BATTLE_3_HEADER![Battle 3: Over the Fence]
+//
+22
+* 1b3m1b.tie
+!MISSION_22_DESC!Liberate Slave Convoy
+23
+* 1b3m2fb.tie
+!MISSION_23_DESC!Supply Rebels with Warheads
+24
+* 1b3m3b.tie
+!MISSION_24_DESC!Recon Imperial Research Facility
+25
+* 1b3m4b.tie
+!MISSION_25_DESC!Investigate Imperial Communications Array
+26
+* 1b3m5fb.tie
+!MISSION_26_DESC!Plant Listening Device
+27
+* 1b3m6b.tie
+!MISSION_27_DESC!Rendezvous with Defector
+28
+* 1b3m7b.tie
+!MISSION_28_DESC!Scramble!
+//
+!BATTLE_4_HEADER![Battle 4: The Bothan Connection]
+//
+29
+* 1b4m1fb.tie
+!MISSION_29_DESC!Shipment to Mining Colony
+30
+* 1b4m2b.tie
+!MISSION_30_DESC!Reconnaissance of Imperial Convoy
+31
+* 1b4m3fb.tie
+!MISSION_31_DESC!Mining Colony Under Siege: Rescue Aeron
+32
+* 1b4m4b.tie
+!MISSION_32_DESC!Capture the Freighter Suprosa
+33
+* 1b4m5b.tie
+!MISSION_33_DESC!Abandon Rebel Base at Kothlis
+34
+* 1b4m6b.tie
+!MISSION_34_DESC!Protect Imperial Computer
+//
+!BATTLE_5_HEADER![Battle 5: Mustering the Fleet]
+//
+35
+* 1B5M1G.tie
+!MISSION_35_DESC!Protect Alliance-Smuggler Meeting
+36
+* 1B5M2G.tie
+!MISSION_36_DESC!Attack Imperial Convoy
+37
+* 1B5M3FG.tie
+!MISSION_37_DESC!Break Emon Out of Brig
+38
+* 1B5M4G.tie
+!MISSION_38_DESC!Protect Smuggler Retreat
+39
+* 1B5M5G.tie
+!MISSION_39_DESC!Rescue Smugglers
+40
+* 1B5M6FG.tie
+!MISSION_40_DESC!Recover Family Data Core 
+41
+* 1B5M7G.tie
+!MISSION_41_DESC!Attack Pirate Base
+//
+!BATTLE_6_HEADER![Battle 6: The Darkest Hour]
+//
+42
+* 1b6m1b.tie
+!MISSION_42_DESC!Meet with Bothan Delegation
+43
+* 1b6m2fb.tie
+!MISSION_43_DESC!Locate Mercenary Base
+44
+* 1b6m3b.tie
+!MISSION_44_DESC!Raid Mercenary Base
+45
+* 1b6m4b.tie
+!MISSION_45_DESC!Rescue Bothan Spies
+46
+* 1b6m5b.tie
+!MISSION_46_DESC!Steal Imperial Shuttle
+47
+* 1b6m6b.tie
+!MISSION_47_DESC!Escort Rebel Fleet
+48
+* 1b6m7fb.tie
+!MISSION_48_DESC!Family Reunion
+//
+!BATTLE_7_HEADER![Battle 7: The Battle of Endor]
+//
+49
+* 1B7M1W.tie
+!MISSION_49_DESC!Battle of Endor
+50
+* 1B7M2W.tie
+!MISSION_50_DESC!Phase 2: That Thing's Operational!
+51
+* 1B7M3W.tie
+!MISSION_51_DESC!Phase 3: The Shield Is Down!
+52
+* 1B7M4W.tie
+!MISSION_52_DESC!Phase 4: Death Star Tunnel Run
+//
+!BATTLE_8_HEADER![Battle 8: The Karana initiative]
+//
+53
+* 1B8M1KARANA.TIE
+!MISSION_53_DESC!Recon duty
+54
+* 1B8M2KARANA.TIE
+!MISSION_54_DESC!Cargo embargo
+55
+* 1B8M3KARANA.TIE
+!MISSION_55_DESC!A slight detour
+56
+* 1B8M4KARANA.TIE
+!MISSION_56_DESC!Hail to the Queen
+//

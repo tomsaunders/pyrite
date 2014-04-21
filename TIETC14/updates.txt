@@ -1,0 +1,42 @@
+Update History:
+
+Modified for Project Phoenix (Nov 15, 1999)
+- Battle1.lfd file corrected
+- Removed blank qestions
+- Added messages in all missions
+- Added post mission questions in M3,4,5
+by: FM/CM Wlodek/Kappa 2-4/Wing II/SSSD Sovereign
+
+- Slight corrections on animated briefings
+- Bug corrected on Mission 3 (ISD Avenger departure) (21/02/00)
+- Bug corrected on Mission 4 (number of crafts at the same time) (01/08/00)
+by: CA:TAC/AD Striker/CA-3/SSSD Sovereign
+
+- Grammar and spelling corrections throughout
+- Mission 1:  adjusted arrival times of craft launching from DREAD (launches wait until 
+it's done hypering in)
+              adjusted direction of arrival of DREAD so it doesn't fly through the ISD
+- Mission 2:  Added capture of PLT as Primary Goal (as per briefing)
+              Changed arrival method of fighters from CRV to hyperspace to avoid
+              violating capacity limits of CRV
+- Mission 3:  Moved start point of TRNs so first wave doesn't crash into ISD
+by:  CMDR-PROF-TCS-TCT/LC Philo/Yod/Wing IV/SSSD Sovereign (2003.04.10)
+
+-------------------------------------
+
+- Removed patches (use EHBL for transports and rebel fighters)
+- Encrypted and repacked for use with EHBL.
+- Adjusted readme.txt
+
+SCO-TCT-TCS-PROF/FA Ender mBind 30/07/03
+
+
+
+* changes made to conform to the new EHSP system
+* added/corrected missing/wrong patches information
+* corrected installation instructions
+- moved update texts from readme.txt to updates.txt
+- moved other texts into readme.txt, then deleted the original file
+-----------------
+TAC-RPOF/FA Anahorn Dempsey/CS-6/VSD Sinister
+SCO(TAC)-TCT-TCS-PROF/HA Ender mBind/CS-6a/VSD Sinister

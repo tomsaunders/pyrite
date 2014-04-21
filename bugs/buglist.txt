@@ -1,0 +1,25 @@
+TIETC230
+
+"Mission 2 crashes to windows upon launch."
+
+TIETC234
+
+"	B1M3 - the T/A Gamma has a tendency to attack the player's FG"
+
+TIETC238
+
+	HA Daniel Bonini
+ 	   03/11/2014
+ 	This has also happened to me on hard. Mission 2 cannot be completed, because there are (in hard) 3 objectives to destroy all mines, and only one is completable.
+
+ 	HA Frodo March
+ 	   01/18/2010
+ 	I'd just like to double what Dax said, happened to me too on medium, not on easy. I didnt try hard.
+
+ 	GN Dax Corrin
+ 	   09/09/2009
+ 	Battle 2 100% of mine group HC-23M must be destroyed. 2 objectives identical, only one is completeable. I destroy all mines, yet 1 objective to destroy the same mine group exists, preventing mission completion
+
+TIETC241
+
+	I'm not sure if it was Mission 3 or 4... anyways, it's that one when you need to blow up 50% of a T/I FG and also 50% of a T/B FG to complete the mission. The thing is that T/B FG Delta never appeared and after vaping all T/Is I needed to fry VSD Venom too (T/B Delta mothership) in order to complete the mission. I'm not sure why did it happen, for I think I tested the battle back in the day and don't remember this bug. BTW, I've only played it on Hard difficulty.
