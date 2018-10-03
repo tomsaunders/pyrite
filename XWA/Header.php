@@ -1,8 +1,9 @@
 <?php
 
-namespace XWA;
+namespace Pyrite\XWA;
 
 use Pyrite\Byteable;
+use Pyrite\Hex;
 
 class Header implements Byteable {
 
@@ -69,7 +70,7 @@ class Header implements Byteable {
         $this->endMissionWhenComplete   = getBool($byteString, self::HEADER_END);
         $this->briefingOfficer          = getByte($byteString, self::HEADER_OFFICER);
         $this->briefingLogo             = getByte($byteString, self::HEADER_LOGO);
-        $this->hex = \Hex::hexToStr($byteString);
+        $this->hex = Hex::hexToStr($byteString);
     }
 
     public function getLength(){

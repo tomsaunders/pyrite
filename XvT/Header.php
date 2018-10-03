@@ -1,12 +1,11 @@
 <?php
+namespace Pyrite\XvT;
 
-namespace XvT;
-
-use TIE\Byteable;
-use TIE\length;
+use Pyrite\Byteable;
+use Pyrite\HexDecoder;
 
 class Header implements Byteable {
-    use \HexDecoder;
+	use HexDecoder;
 
     public $platformID;
     public $flightGroupCount;
@@ -19,7 +18,9 @@ class Header implements Byteable {
     public $missionType;
     public $unk6;
     public $timeLimitMinutes;
-    public $timeLiimitSeconds;
+    public $timeLimitSeconds;
+
+	public $valid = true;
 
     public $hex;
 
@@ -40,16 +41,15 @@ class Header implements Byteable {
         $this->unk3             = $this->getBool($byteString , self::HEADER_UNK + 5);
         $this->unk4             = $this->getByte($byteString , 40);
         $this->unk5             = $this->getByte($byteString , 80);
-        $this->missionType      = $this->getByte($byteString , self::HEADER_MISSION);
-        $this->unk6             = $this->getBool($byteString , self::HEADER_MISSION + 1);
+        $this->missionType      = $this->getByte($byteString , self::HEADER_TYPE);
+        $this->unk6             = $this->getBool($byteString , self::HEADER_TYPE + 1);
         $this->timeLimitMinutes = $this->getByte($byteString , self::HEADER_TIME);
-        $this->timeLiimitSeconds= $this->getByte($byteString , self::HEADER_TIME + 1);
+        $this->timeLimitSeconds = $this->getByte($byteString , self::HEADER_TIME + 1);
 
-        $this->hex = \Hex::hexToStr($byteString);
+//        $this->hex = Hex::hexToStr(substr($byteString, self::HEADER_TIME + 2, 60));
     }
 
-    public function getLength()
-    {
+    public function getLength(){
         return self::HEADER_LENGTH;
     }
 }

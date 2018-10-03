@@ -1,28 +1,51 @@
 <?php
+namespace Pyrite\TIE;
 
-namespace TIE;
+use Pyrite\Summary;
 
-class FlightGroup implements Byteable{
-    public $general;
-    public $goals;
-    public $arrival;
-    public $departure;
-    public $orders;
-    public $navigation;
-
-    private $fg = array();
-
-    const FLIGHT_GROUP_LENGTH = 292;
-
-    public function __construct(){
-
+class FlightGroup extends FlightGroupBase implements Summary
+{
+    public function hasMothership()
+    {
+        return $this->ArriveViaMothership === true || $this->AlternateArriveViaMothership === true;
     }
 
-    public function getLength(){
-        return self::FLIGHT_GROUP_LENGTH;
+    public function getMothershipFG()
+    {
+        return $this->TIE->FlightGroups[$this->ArrivalMothership];
     }
 
-    public function __toString(){
-        return "FG n";
+    public function __toString()
+    {
+        $waves = $this->NumberOfWaves === 0 ? '' : ($this->NumberOfWaves + 1) . 'x';
+        $parts = [
+            $this->getIFFLabel(),
+            "{$waves}{$this->NumberOfCraft}",
+            $this->getCraftTypeLabel(),
+            $this->Name
+        ];
+
+        return implode(" ", $parts);
     }
-} 
+
+    public function hasMultipleWaves()
+    {
+        return $this->NumberOfWaves > 0;
+    }
+
+    public function getIFFLabel(){
+    	return $this->TIE->lookupIFF($this->Iff);
+	}
+
+	public function summaryHash(){
+		$waves = $this->NumberOfWaves === 0 ? '' : ($this->NumberOfWaves + 1) . 'x';
+		$diff = $this->getArrivalDifficultyLabel();
+		return [
+			'IFF' => $this->getIFFLabel(),
+			'Craft' => "{$waves}{$this->NumberOfCraft}",
+			'Type' => $this->getCraftTypeLabel(),
+			'Name' => $this->printChar($this->Name),
+			'Difficulty' => $diff
+		];
+	}
+}

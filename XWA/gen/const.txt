@@ -1,0 +1,644 @@
+Hangar
+00	Junkyard
+01	Quick Start 1
+02	Quick Start 2
+03	Quick Start 3
+04	Skirmish
+05	Death Star run
+06	Calamari Cruiser
+07	Family Mission
+
+BriefingOfficer
+00	Devers
+01	Kupalo
+02	Zaletta
+08	Emkay
+
+BriefingLogo
+04	Defiance
+05	Liberty
+06	Independence
+07	Family
+08	Phantom Squadron
+
+CraftRole
+00	Command Ship
+01	Base
+02	Station
+03	Mission Critical Craft
+04	Convoy Craft
+05	Strike Craft
+06	Reload Craft
+07	Primary Target
+08	Secondary Target
+09	Tertiary Target
+0A	Resource Center
+0B	Facility
+0C	HYP from Region 1
+0D	HYP from Region 2
+0E	HYP from Region 3
+0F	HYP from Region 4
+10	HYP to Region 1
+11	HYP to Region 2
+12	HYP to Region 3
+13	HYP to Region 4
+14	Unknown
+
+CraftType
+00	None
+01	X-wing
+02	Y-wing
+03	A-wing
+04	B-wing
+05	TIE Fighter
+06	TIE Interceptor
+07	TIE Bomber
+08	TIE Advanced
+09	TIE Defender
+0A	IRD Fighter
+0B	Toscan Fighter
+0C	Missile Boat
+0D	T-wing
+0E	Z-95 Headhunter
+0F	R-41 Starchaser
+10	Assault Gunboat
+11	Shuttle
+12	Escort Shuttle
+13	System Patrol Craft
+14	*Scout Craft
+15	Stormtrooper Transport
+16	Assault Transport
+17	Escort Transport
+18	Tug
+19	Combat Utility Vehicle
+1A	Container A
+1B	Container B
+1C	Container C
+1D	Container D
+1E	Heavy Lifter
+1F	Mole Miner
+20	Bulk Freighter
+21	Cargo Ferry
+22	Modular Conveyor
+23	*Container Transport
+24	Medium Transport
+25	Murrian Transport
+26	Corellian Transport
+27	Millenium Falcon
+28	Corellian Corvette
+29	Modified Corvette
+2A	Nebulon-B Frigate
+2B	Modified Frigate
+2C	*C-3 Passenger Liner
+2D	*Carrack Cruiser
+2E	Strike Cruiser
+2F	Escort Carrier
+30	Dreadnaught
+31	MC80a Cruiser
+32	MC40a Light Cruiser
+33	Interdictor Cruiser
+34	Victory-class Star Destroyer
+35	Imperator-class Star Destroyer
+36	Executor-class Star Destroyer
+37	Container E
+38	Container F
+39	Container G
+3A	Container H
+3B	Container I
+3C	Platform A
+3D	Platform B
+3E	Platform C
+3F	Platform D
+40	Platform E
+41	Platform F
+42	Asteroid R&D Station
+43	Asteroid Laser Battery
+44	Asteroid Warhead Battery
+45	X/7 Factory
+46	Satellite 1
+47	Satellite 2
+48	Satellite 3
+49	*Satellite 4
+4A	*Satellite 5
+4B	Mine A
+4C	Mine B
+4D	Mine C
+4E	Gun Emplacement
+4F	*Mine 5
+50	Probe A
+51	Probe B
+52	*Probe 3
+53	Nav Buoy A
+54	Nav Buoy B
+55	Hyper Buoy
+56	Asteroid Field
+57	Planet
+58	Rendezvous Buoy
+59	Cargo Canister
+5A	Shipyard
+5B	Repair Yard
+5C	*Modified Strike Cruiser
+5D	Lancer Frigate
+5E	Bulk Cruiser
+5F	Assault Frigate
+60	Corellian Gunship
+61	Imperial Landing Craft
+62	Assault Shuttle
+63	Marauder Corvette
+64	Star Galleon
+65	Imperial Research Ship
+66	Luxury Yacht 3000
+67	Ferryboat Liner
+68	Modified Action Transport
+69	Mobquet Transport
+6A	Xiytiar Transport
+6B	Freight Transport/C
+6C	Freight Transport/H
+6D	Freight Transport/K
+6E	YT-2000
+6F	YT-2400
+70	Suprosa
+71	Skipray Blastboat
+72	T/e m1
+73	T/e m2
+74	T/e m3
+75	T/e m4
+76	T/e m5
+77	Cloakshape Fighter
+78	Razor Fighter
+79	Planetary Fighter
+7A	Supa Fighter
+7B	Pinook Fighter
+7C	*Booster Pack
+7D	Preybird Fighter
+7E	*StarViper
+7F	Firespray
+80	Pursuer
+81	Golan 1
+82	Golan 2
+83	Golan 3
+84	Derilyn Platform
+85	Sensor Array
+86	Comm Relay
+87	Space Colony 1
+88	Space Colony 2
+89	Space Colony 3
+8A	Casino
+8B	Cargo Facility 1
+8C	Cargo Facility 2
+8D	Asteroid Mining Plant
+8E	Processing Plant
+8F	Rebel Platform
+90	Imperial Research Center
+91	Family Base
+92	Family Repair Yard
+93	Pirate Shipyard
+94	Industrical Complex
+95	*Pirate Junkyard Base
+96	Escape Pod 1
+97	Pressure Tank
+98	Container J
+99	Container K
+9A	Container L
+9B	Container Hangar
+9C	Large Gun Emplacement
+9D	Large Gun/Warhead Emplacement
+9E	Proximity Mine A
+9F	Proximity Mine B
+A0	*Homing Mine A
+A1	Homing Mine B
+A2	New Laser Battery
+A3	New Ion Battery
+A4	Cargo Freighter
+A5	*Cargo Freighter 2
+A6	*Cargo Freighter 3
+A7	*Cargo Freighter 4
+A8	*Cargo Freighter 5
+A9	Cargo Tanker
+AA	*Cargo Tanker 2
+AB	*Cargo Tanker 3
+AC	*Cargo Tanker 4
+AD	*Cargo Tanker 5
+AE	Escape Pod 2
+AF	*Rebel Pilot
+B0	*Imperial Pilot
+B1	*Civilian Pilot
+B2	Spacetrooper
+B3	Zero-G Utility Suit
+B4	Emkay
+B5	Astromech
+B6	Worker droid
+B7	Backdrop
+B8	*Forest Moon of Endor
+B9	*Endor
+BA	*Sullust
+BB	*Bothuwai
+BC	*Kothlis
+BD	*Hoth
+BE	*DeathStar II backdrop
+BF	*Nar Shadda
+C0	*Planet
+...
+C5	*Planet
+C6	*Moon
+...
+CA	*Moon
+CB	*Sun
+...
+D4	*Sun
+D5	*Backdrop
+...
+E2	*Backdrop
+E3	Death Star II
+E4	MC80 Liberty-class Cruiser
+E5	Victory-class Star Destroyer II
+E6	Imperator-class Star Destroyer II
+E7	*Planet
+
+Status
+00	None
+01	2X Warheads
+02	1/2 Warheads
+03	Disabled
+04	1/2 Shields
+05	No Lasers
+06	No Hyperdrive
+07	Shields 0%, charging
+08	Shields added or 200%
+09	Hyperdrive added
+0A	2x Countermeasure
+0B	1/2 Countermeasures
+0C	(200% Shields)
+0D	Shields 50%, Charging
+0E	(No Lasers)
+0F	Engines Damaged
+10	Shields + Hyperdrive added
+11	All Systems Damaged
+12	200% Shields
+13	(50% Shields)
+14	Invincible
+15	Infinite Warheads
+16	No Escape Pods / Ejected Pilot
+17	No Cargo Pods
+18	Not Inspected
+19	Not ID'ed
+1A	Inspected
+1B	ID'ed
+1C	Limited Targetability
+
+Warhead
+00	None
+01	Space Bomb
+02	Heavy Rocket
+03	Concussion Missile
+04	Torpedo
+05	Advanced Concussion Missile
+06	Advanced Torpedo
+07	Mag Pulse Torpedo
+
+Beam
+00	None
+01	Tractor Beam
+02	Jamming Beam
+03	Decoy Beam
+
+GroupAI
+00	Novice (None)
+01	Officer
+02	Veteran
+03	Ace
+04	Top Ace
+05	Super Ace (Invincible)
+
+Markings
+00	Red (TIE - None)
+01	Gold (TIE - Red)
+02	Blue (TIE - Gold)
+03	Green (TIE - Blue)
+
+Radio
+00	None
+01	Team 1
+02	Team 2
+03	Team 3
+04	Team 4
+05	Team 5
+06	Team 6
+07	Team 7
+08	Team 8
+09	Player 1
+0A	Player 2
+0B	Player 3
+0C	Player 4
+0D	Player 5
+0E	Player 6
+0F	Player 7
+10	Player 8
+
+Formation
+00	Vic
+01	Finger Four
+02	Line Astern
+03	Line Abreast
+04	Echelon Right
+05	Echelon Left
+06	Double Astern
+07	Diamond
+08	Stack
+09	High X
+0A	Vic Abreast
+0B	High Vic
+0C	Reverse High Vic
+0D	Reverse Line Astern
+0E	Stacked Low
+0F	Abreast Right
+10	Abreast Left
+11	Wing Forward
+12	Wing Back
+13	Line Astern Up
+14	Line Astern Down
+15	Abreast V
+16	Abreast Inverted V
+17	Double Astern Mirror
+18	Double Stacked Astern
+19	Double Stacked High
+1A	Diamond 1
+1B	Diamond 2
+1C	Flat Pentagon
+1D	Side Pentagon
+1E	Front Pentagon
+1F	Flat Hexagon
+20	Side Hexagon
+21	Front Hexagon
+22	Single Point
+
+ArrivalDifficulty
+00	All
+01	Easy
+02	Medium
+03	Hard
+04	Greater than Easy
+05	Less than Hard
+06	Never
+
+Condition
+00	Always (true)
+01	Created
+02	Destroyed
+03	Attacked
+04	Captured
+05	Inspected
+06	Boarded
+07	Docked
+08	Disabled
+09	Exist
+0A	None (false)
+0B	Unknown (---)
+0C	Completed mission
+0D	Completed Primary Goals
+0E	Failed Primary Goals
+0F	Completed Secondary Goals
+10	Failed Secondary Goals
+11	Completed Bonus Goals
+12	Failed Bonus Goals
+13	Dropped off
+14	Reinforced
+15	0% Shields
+16	50% Hull
+17	Out of Warheads
+18	Unknown (arrive?)
+19	Be dropped off
+1A	Unharmed?
+1B	NOT be disabled
+1C	NOT be picked up
+1D	Destroyed w/o Inspection
+1E	Be docked with
+1F	NOT be docked with
+20	Begin boarding
+21	NOT begin boarding
+22	50% Shields
+23	25% Shields
+24	75% Hull
+25	25% Hull
+26	Unknown
+27	Unknown
+28	Unknown
+29	Be all Player Craft
+2A	Reinforced by AI?
+2B	Come and go
+2C	Be picked up
+2D	Withdraw
+2E	Be carried away
+2F	Arrived in Region
+30	Departed Region
+31	Be in proximity of
+32	NOT be in proxmity of
+33	Unknown
+34	Defect
+35	Be in convoy
+36	Be delivered?
+37	Unknown
+38	Be shown (message)
+39	Be ID'ed
+3A	Unknown
+3B	Exist?
+
+VariableType
+00	None
+01	Flight Group
+02	CraftType (enum)
+03	CraftCategory (enum)
+04	ObjectCategory (enum)
+05	IFF
+06	Order (enum)
+07	CraftWhen (enum)
+08	Global Group
+0C	Team
+0D	Player of Global Group
+0F	All Flight Groups except?
+10	All Ship Types except?
+11	All Ship Categories except?
+12	All Object Categories except?
+13	All IFFs except?
+15	All Teams except?
+17	Global Unit
+18	All Global Units except?
+19	Global Cargo
+1B	Message #
+
+CraftCategory
+00	Starfighters
+01	Transports
+02	Freighters/Containers
+03	Starships
+04	Utility Craft
+05	Platforms/Facilities
+06	Mines
+
+ObjectCategory
+00	Craft
+01	Weapons
+02	Space Objects
+
+Amount
+00	100%
+01	75%
+02	50%
+03	25%
+04	At least one
+05	All but one
+06	Special craft
+07	All non-special craft
+08	All non-player craft
+09	Player's craft
+0A	Unknown
+10	66%
+11	33%
+12	Each craft
+13	Each special craft
+
+AbortTrigger
+00	None
+01	0% Shields
+02	Unknown
+03	Out of warheads
+04	50% Hull
+05	Attacked
+06	50% Shields
+07	25% Shields
+08	75% Hull
+09	25% Hull
+
+Order
+00	Hold Station
+01	Go Home
+02	Circle
+	Var1	Number of Loops
+03	Circle and Evade
+	Var1	Number of Loops
+04	Rendezvous
+	Var1	Number of Dockings
+05	Disabled
+	Var1	Number of Dockings
+06	Await Boarding
+	Var1	Number of Dockings
+07	Attack
+	Var1	Component
+08	Attack Escorts
+09	Protect
+0A	Escort
+	Var2	Attack Player (0/1)
+0B	Disable
+0C	Board and Give Cargo
+	Var1	Docking Time ( 0-14 = seconds, 15 = 25s, 16 = 30s, etc)
+	Var2	Number of Dockings
+0D	Board and Take Cargo
+	Var1	Docking Time
+	Var2	Number of Dockings
+0E	Board and Exchange Cargo
+	Var1	Docking Time
+	Var2	Number of Dockings
+0F	Board and Capture Cargo
+	Var1	Docking Time
+	Var2	Number of Dockings
+10	Board and Destroy Cargo
+	Var1	Docking Time
+	Var2	Number of Dockings
+11	Pick up
+	Var1	Docking Time
+12	Drop off
+	Var1	Deploy Time?
+	Var2	Flight Group
+13	Wait
+	Var1	Wait time
+14	SS Wait
+	Var1	Wait time
+15	SS Patrol Loop
+	Var1	Number of Loops
+16	SS Await Return
+17	SS Launch
+18	SS Protect
+19	SS Wait and Protect
+1A	SS Patrol and Attack
+1B	SS Patrol and Disable
+1C	SS Hold Steady
+1D	SS Go Home
+1E	SS Wait
+	Var1	Wait time
+1F	SS Board
+	Var1	Docking Time
+	Var2	Number of Dockings
+20	Board to Repair
+	Var1	Docking Time
+	Var2	Number of Dockings
+21	Hold Station
+22	Hold Steady
+23	SS Hold Station
+24	Self-destruct
+	Var1	Delay Time
+25	Kamikaze
+26	(Orbit)
+27	(Release Carried Cargo)
+28	Deliver/Drop Off
+29	Unknown
+2A	(Attack)
+2B	Load Objects
+	Var1	Objects
+2C	Sit and Fire
+	Var1	Use Missiles (0/1)
+2D	Repair Self
+	Var1	Repair Time
+2E	Defect
+	Var1	IFF
+	Var2	Team
+2F	Self Capture / Surrender
+	Var1	IFF
+30	*Make
+	Var1	Craft Type
+31	Beacon
+32	Hyper to Region
+	Var1	Region
+	Var2	Wait (0/1)
+	Var3	# of loops
+33	*Relaunch
+	Var1	Warhead Type
+34	Transfer Cargo
+	Var1	# of loops
+35	Inspect Targets
+36	*Await Assembly
+37	*Await Disassembly
+38	*Construct Train
+	Var1	on Flight Group
+	Var2	From Global Group
+	Var3	# of dockings
+39	Park at
+	Var1	Wait time
+	Var2	Waypoint #
+3A	*Board to Defuse
+	Var1	Docking Time
+3B	Start Over
+	Var1	# of loops
+3C	*Take Apart Train
+	Var1	From Flight Group
+3D	Work on
+	Var1	Time
+	Var2	Component
+	Var3	# of loops
+3E	(Dock to Load)
+3F	Follow Targets
+	Var1	# of loops
+40	Home In
+	Var1	# of loops
+	Var2	Direction (0 = clockwise, 1  = counter-clockwise)
+
+CraftWhen
+01	Inspected
+02	Finished docking?
+04	Disabled
+05	Attacked
+06	0% Shields?
+07	Special craft
+08	Non-special craft
+09	Player's craft
+0A	Non-player's craft
+0C	not disabled

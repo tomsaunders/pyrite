@@ -1,0 +1,86 @@
+Primary goals complete: E - 2750, M - 5250, H - 7750
+Secondary goals complete:  E - 2750, M - 5250, H - 7750
+Bonus goals complete: E - 1100, M - 2100, H - 3100
+Collision: On - 0, Off E - 100, Off MH - 250
+Diff: E - .75, M - 1, H - 1.25
+
+Score = ((bool)Cheat ? .1 : 1) *
+(
+	(WHit - WMissed)*50 + (LHit*2 - LMissed) + Goals - Collision
+	+ (Kills * Diff * ((bool)Collision ? 1 : 8/9)
+	- ((bool)Reinforced ? 5000 : 0)
+	- FriendlyKills * 41/3
+)
+
+[AD Jagged Fel]
+
+Here's a complete chart with scores for the destruction of every object found in TIE Fighter. The points were measured in medium difficulty, with vulnerable and collision damage on, and ammo set to "limited".
+
+Rebel fighters:
+X-Wing - 675
+Y-Wing - 450
+A-Wing - 900
+B-Wing - 900
+Z-95 - 360
+T-Wing - 450
+R-41 Starchaser - 540
+
+Imperial fighters:
+TIE Fighter - 450
+TIE Bomber - 675
+TIE Interceptor - 675
+TIE Advanced - 1,125
+TIE Defender - 1,800
+Assault Gunboat - 900
+Missile Boat - 1,125
+
+Shuttles:
+Tyderian Shuttle - 900
+Escort Shuttle - 1,800
+
+Transports:
+Stormtrooper Transport - 675
+Assault Transport - 1,080
+Freighter - 1,350
+Corellian Transport - 2,250
+Muurian Transport - 2,250
+Escort Transport - 1,350
+Container Transport - 1,800
+Modular Conveyor - 1,350
+Cargo Ferry - 1,800
+Heavy Lifter - 675
+System Patrol Craft - 2,700
+Scout Craft - 2,700
+
+Capital Ships and Platforms:
+Corvette - 1,800
+Modified Corvette - 2,250
+Escort Carrier - 4,500
+C-3 Passenger Liner - 4,500
+Dreadnaught - 5,625
+Strike Cruiser - 4,500
+Carrack Cruiser - 4,950
+Nebulon-B Frigate - 4,950
+Modified Frigate - 4,500
+Light Calamari - 5,625
+Calamari Cruiser - 6,750
+Interdictor - 5,300
+Victory Star Destroyer - 5,625
+Imperator Star Destroyer - 9,000
+Platform - 5,850
+X/7 Factory Station - 5,850
+Asteroid Research Station - 5,850
+Asteroid Laser Battery - 5,850
+Asteroid Missile Launcher - 5,850
+
+Misc. Objects:
+Satellite - 60
+Spacemine - 60
+Probe - 60
+Nav Bouy - 60
+Continer - 900
+Tug - 225
+Combat Utility Vehicle - 270
+
+
+[SL Skal / Omicron 2-1 / VSD Striker / Navy]

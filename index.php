@@ -1,28 +1,49 @@
+<pre>
 <?php
 include('bootstrap.php');
-$start = 0;
-if (isset($_GET['start'])) $start = (int)$_GET['start'];
-$i = 0;
-$first;
-$second;
-foreach ($desc as $tie => $info){
-    if ($i > ($start + 1)) break;
-    if ($i === $start) $first = array($tie, $info);
-    if ($i === ($start + 1)) $second = array($tie, $info);
-    $i++;
+$path = 'cake/app/webroot/files/battles/';
+$missions = array(
+);
+$print = array();
+$types = array(
+    'TC',
+    'IW',
+    'DB',
+    'ID',
+    'CAB',
+    'FCHG',
+    'BHG',
+    'F'
+);
+$limit = 300;
+foreach ($types as $type){
+	for ($i = 1; $i <= $limit; $i++){
+		$battle = 'TIE' . $type . $i . '/';
+		if (file_exists($path . $battle)){
+			foreach (scandir($path . $battle) as $filename){
+				$bits = explode('.', $filename);
+				if (strtolower(array_pop($bits)) === 'tie'){
+					$missions[] = $battle . $filename;
+				}
+			}
+		} else {
+            continue 2;
+        }
+	}
 }
-if ($start > 0){
-    echo "<a href='index.php?start=" . ($start-1) . "'>Previous</a> || ";
+$start = microtime(TRUE);
+ini_set('memory_limit','512M');
+foreach ($missions as $mission){
+    set_time_limit(30);
+	$TIE = new \Pyrite\TIE\Mission($path . $mission);
+	$gk = new \Pyrite\TIE\GoalKeeper($TIE);
+    if ($gk->HR()){
+        $print[$mission] = $gk->printDump();
+    }
 }
-echo "<a href='index.php?start=" . ($start+1) . "'>Next</a>";
-
-echo "<div style='float:left; width: 45%;'><pre>";
-echo $first[0] . " - " . $first[1] . "\n";
-$TIE = new TIE('hexing/' . $first[0]);
-print_r($TIE->printDump());
-echo "</pre></div>";
-echo "<div style='float:right; width: 45%;'><pre>";
-echo $second[0] . " - " . $second[1] . "\n";
-$TIE = new TIE('hexing/' . $second[0]);
-print_r($TIE->printDump());
-echo "</pre></div>";
+$end = microtime(TRUE);
+$print[] = count($print) . ' missions with heavy rockets';
+$print[] = count($missions) . ' processed in ' . (($end-$start)) . ' seconds';
+print_r($print);
+?>
+</pre>

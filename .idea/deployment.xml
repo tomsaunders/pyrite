@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="tsaunders.net">
+    <serverData>
+      <paths name="tsaunders.net">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/pyrite" local="$PROJECT_DIR$" web="/pyrite" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

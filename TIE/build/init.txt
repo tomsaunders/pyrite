@@ -1,0 +1,8 @@
+FileHeader
+FlightGroup[NumFGs]
+Message[NumMessages]
+GlobalGoal[3]
+Briefing
+PreMissionQuestions[10]
+PostMissionQuestions[10]
+BYTE	Reserved(0xFF)

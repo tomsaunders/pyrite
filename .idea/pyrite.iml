@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/EHM" />
+      <excludeFolder url="file://$MODULE_DIR$/MISSION" />
+      <excludeFolder url="file://$MODULE_DIR$/TIETC14" />
+      <excludeFolder url="file://$MODULE_DIR$/TIETC201" />
+      <excludeFolder url="file://$MODULE_DIR$/XWATC67" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/app/webroot/files/battles" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/vendors/phpQuery/api-reference" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/vendors/phpQuery/cli" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/vendors/phpQuery/jQueryServer" />
+      <excludeFolder url="file://$MODULE_DIR$/cake/vendors/phpQuery/test-cases" />
+      <excludeFolder url="file://$MODULE_DIR$/editor/docs" />
+      <excludeFolder url="file://$MODULE_DIR$/hexing" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES>
-          <root url="phar://$MODULE_DIR$/phpunit-lts.phar" />
-        </CLASSES>
-        <SOURCES>
-          <root url="phar://$MODULE_DIR$/phpunit-lts.phar" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
-
