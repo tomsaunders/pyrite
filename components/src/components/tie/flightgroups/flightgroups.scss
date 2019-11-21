@@ -1,0 +1,15 @@
+pyrite-tie-flightgroups {
+  display: flex;
+  flex-direction: row;
+
+  ion-list {
+    flex: 1;
+    margin-top: 24px;
+    border-radius: 8px;
+  }
+
+  ion-card,
+  pyrite-tie-flightgroup {
+    flex: 3;
+  }
+}

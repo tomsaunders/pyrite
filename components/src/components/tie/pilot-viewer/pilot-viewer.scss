@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  ion-list {
+    width: 100%;
+
+    ion-note {
+      min-width: 8rem;
+    }
+
+    ion-icon {
+      &.complete {
+        color: darkgoldenrod;
+      }
+      &.failed {
+        color: red;
+      }
+      &.secret {
+        color: silver;
+      }
+      &.bonus {
+        color: gold;
+      }
+    }
+
+    ion-item.data + ion-item.no-data {
+      display: none;
+    }
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+}

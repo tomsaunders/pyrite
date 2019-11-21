@@ -1,0 +1,301 @@
+struct FileHeader (size 0x23F0)
+{
+	0x0000	SHORT	PlatformID (0x20)
+	0x0002	SHORT	NumFGs
+	0x0004	SHORT	NumMessages
+	0x0008	BOOL	Unknown1
+	0x000B	BOOL	Unknown2
+	0x0014	STR(20)[4]	IffNames3-6
+	0x0064	STR(132)[4]	RegionNames
+	0x0274	GlobalCargo[16]
+	0x0B34	STR(87)[16]	GlobalGroupNames
+	0x23AC	BYTE	Hangar (enum)
+	0x23AE	BYTE	TimeLimitMinutes
+	0x23AF	BOOL	EndMissionWhenComplete
+	0x23B0	BYTE	BriefingOfficer (enum)
+	0x23B1	BYTE	BriefingLogo (enum)
+	0x23B3	BYTE	Unknown3
+	0x23B4	BYTE	Unknown4
+	0x23B5	BYTE	Unknown5
+}
+
+struct GlobalCargo (size 0x8C)
+{
+	0x00	STR[64]	Cargo
+	0x44	BOOL	Unknown1
+	0x48	BYTE	Unknown2
+	0x49	BYTE	Unknown3
+	0x4A	BYTE	Unknown4
+	0x4B	BYTE	Unknown5
+}
+
+struct FlightGroup (size 0xE3E)
+{
+	0x000	STR(20)	Name
+	0x014	BOOL	EnableDesignation
+	0x015	BOOL	EnableDesignation2
+	0x016	BYTE	Designation (enum)
+	0x017	BYTE	Designation2 (enum)
+	0x018	BYTE	Unknown1
+	0x019	BYTE	GlobalCargoIndex
+	0x01A	BYTE	GlobalSpecialCargoIndex
+	0x028	STR(20)	Cargo
+	0x03C	STR(20)	SpecialCargo
+	0x050	STR(20)	CraftRole
+	0x069	BYTE	SpecialCargoCraft
+	0x06A	BOOL	RandomSpecialCargoCraft
+	0x06B	BYTE	CraftType (enum)
+	0x06C	BYTE	NumberOfCraft
+	0x06D	BYTE	Status1 (enum)
+	0x06E	BYTE	Warhead (enum)
+	0x06F	BYTE	Beam (enum)
+	0x070	BYTE	Iff
+	0x071	BYTE	Team
+	0x072	BYTE	GroupAI (enum)
+	0x073	BYTE	Markings (enum)
+	0x074	BYTE	Radio (enum)
+	0x076	BYTE	Formation (enum)
+	0x077	BYTE	FormationSpacing
+	0x078	BYTE	GlobalGroup
+	0x079	BYTE	LeaderSpacing
+	0x07A	BYTE	NumberOfWaves
+	0x07B	BYTE	Unknown3
+	0x07D	BYTE	PlayerNumber
+	0x07E	BOOL	ArriveOnlyIfHuman
+	0x07F	BYTE	PlayerCraft
+	0x080	BYTE	Yaw
+	0x081	BYTE	Pitch
+	0x082	BYTE	Roll
+	0x084	BYTE	Unknown4
+	0x086	BYTE	ArrivalDifficulty (enum)
+	0x087	BYTE	Unknown5
+	0x088	Trigger	Arrival1
+	0x08E	Trigger	Arrival2
+	0x096	BOOL	Arrival1OrArrival2
+	0x097	BOOL	Unknown6
+	0x098	Trigger	Arrival3
+	0x09E	Trigger	Arrival4
+	0x0A6	BOOL	Arrival3OrArrival4
+	0x0A8	BOOL	Arrivals12OrArrivals34
+	0x0AA	BYTE	ArrivalDelayMinutes
+	0x0AB	BYTE	ArrivalDelaySeconds
+	0x0AC	Trigger	Departure1
+	0x0B2	Trigger	Departure2
+	0x0BA	BOOL	Departure1OrDeparture2
+	0x0BC	BYTE	DepartureDelayMinutes
+	0x0BD	BYTE	DepartureDelaySeconds
+	0x0BE	BYTE	AbortTrigger (enum)
+	0x0BF	BYTE	Unknown7
+	0x0C0	BYTE	Unknown8
+	0x0C2	BYTE	ArrivalMothership
+	0x0C3	BOOL	ArriveViaMothership
+	0x0C4	BYTE	AlternateArrivalMothership
+	0x0C5	BOOL	AlternateArriveViaMothership
+	0x0C6	BYTE	DepartureMothership
+	0x0C7	BOOL	DepartViaMothership
+	0x0C8	BYTE	AlternateDepartureMothership
+	0x0C9	BOOL	AlternateDepartViaMothership
+	0x0CA	Order[16]
+	0xA0A	Skip[16]
+	0xB0A	GoalFG[8]
+	0xD8A	Waypt[3] StartPoints
+	0xDA2	Waypt	HyperPoint
+	0xDAA	BYTE[3]	StartPointRegions
+	0xDAD	BYTE	HyperPointRegion
+	0xDAE	BYTE	Unknown16
+	0xDAF	BYTE	Unknown17
+	0xDB0	BYTE	Unknown18
+	0xDB1	BYTE	Unknown19
+	0xDB2	BYTE	Unknown20
+	0xDB3	BYTE	Unknown21
+	0xDB4	BOOL	Unknown22
+	0xDB6	BYTE	Unknown23
+	0xDB7	BYTE	Unknown24
+	0xDB8	BYTE	Unknown25
+	0xDB9	BYTE	Unknown26
+	0xDBA	BYTE	Unknown27
+	0xDBB	BYTE	Unknown28
+	0xDBC	BOOL	Unknown29
+	0xDC0	BOOL	Unknown30
+	0xDC1	BOOL	Unknown31
+	0xDC4	BOOL	EnableGlobalUnit
+	0xDC5	BYTE	Unknown32
+	0xDC6	BYTE	Unknown33
+	0xDC7	BYTE	Countermeasures
+	0xDC8	BYTE	CraftExplosionTime
+	0xDC9	BYTE	Status2
+	0xDCA	BYTE	GlobalUnit
+	0xDCC	BYTE[8]	OptionalWarheads
+	0xDD4	BYTE[4]	OptionalBeams
+	0xDDA	BYTE[3]	OptionalCountermeasures
+	0xDDE	BYTE	OptionalCraftCategory
+	0xDDF	BYTE[10] OptionalCraft
+	0xDE9	BYTE[10] NumberOfOptionalCraft
+	0xDF3	BYTE[10] NumberofOptionalCraftWaves
+	0xDFD	STR(16)	PilotID
+	0xE12	BYTE	Backdrop
+	0xE29	BOOL	Unknown34
+	0xE2B	BOOL	Unknown35
+	0xE2D	BOOL	Unknown36
+	0xE2F	BOOL	Unknown37
+	0xE31	BOOL	Unknown38
+	0xE33	BOOL	Unknown39
+	0xE35	BOOL	Unknown40
+	0xE37	BOOL	Unknown41
+}
+
+struct Trigger (size 0x6)
+{
+	0x0	BYTE	Condition (enum)
+	0x1	BYTE	VariableType (enum)
+	0x2	BYTE	Variable
+	0x3	BYTE	Amount (enum)
+	0x4	BYTE	Parameter
+	0x5	BYTE	Parameter2
+}
+
+struct Order (size 0x95)
+{
+	0x00	BYTE	Order (enum)
+	0x01	BYTE	Throttle
+	0x02	BYTE	Variable1
+	0x03	BYTE	Variable2
+	0x04	BYTE	Variable3
+	0x05	BYTE	Unknown9		** retains FG Unknown numbering
+	0x06	BYTE	Target3Type (enum VariableType)
+	0x07	BYTE	Target4Type (enum VariableType)
+	0x08	BYTE	Target3
+	0x09	BYTE	Target4
+	0x0A	BOOL	Target3OrTarget4
+	0x0C	BYTE	Target1Type (enum VariableType)
+	0x0D	BYTE	Target1
+	0x0E	BYTE	Target2Type (enum VariableType)
+	0x0F	BYTE	Target2
+	0x10	BOOL	Target1OrTarget2
+	0x12	BYTE	Speed
+	0x14	Waypt[8]
+	0x72	BYTE	Unknown10
+	0x73	BOOL	Unknown11
+	0x74	BOOL	Unknown12
+	0x7B	BOOL	Unknown13
+	0x81	BOOL	Unknown14
+}
+
+struct Waypt (size 0x8)
+{
+	0x0	SHORT	X
+	0x2	SHORT	Y
+	0x4	SHORT	Z
+	0x6	BOOL	Enabled
+}
+
+struct Skip (size 0x10)
+{
+	0x0	Trigger	Trigger1
+	0x6	Trigger	Trigger2
+	0xE	BOOL	Trigger1OrTrigger2
+}
+
+struct GoalFG (size 0x50)
+{
+	0x00	BYTE	Argument
+	0x01	BYTE	Condition
+	0x02	BYTE	Amount
+	0x03	SBYTE	Points
+	0x04	BOOL	Enabled
+	0x05	BYTE	Team
+	0x0D	BYTE	Unknown42 [goal time limit?]
+	0x0E	BYTE	Parameter
+	0x0F	BYTE	ActiveSequence
+	0x4F	BOOL	Unknown15		** retains FG Unknown numbering
+}
+
+struct Message (size 0xA2)
+{
+	0x00	SHORT	NessageIndex
+	0x02	STR(64)	Message
+	0x52	BYTE[10] SetToTeam
+	0x5C	Trigger	Trigger1
+	0x62	Trigger	Trigger2
+	0x68	BYTE	Unknown1
+	0x6A	BOOL	Trigger1OrTrigger2
+	0x6C	Trigger	Trigger3
+	0x72	Trigger	Trigger4
+	0x7A	BOOL	Trigger3OrTrigger4
+	0x7C	STR(8)	Voice
+	0x84	BYTE	OriginatingFG
+	0x8C	BYTE	DelaySeconds
+	0x8D	BYTE	DelayMinutes
+	0x8E	BYTE	Color
+	0x8F	BOOL	Triggers12OrTriggers34
+	0x90	Trigger	Cancel1
+	0x96	Trigger	Cancel2
+	0x9E	BOOL	Cancel1OrCancel2
+	0xA0	BOOL	Unknown2
+}
+
+struct GlobalGoal (size 0x170)
+{
+	0x00	SHORT	Reserved (3)
+	0x02	GoalGlobal[3]
+}
+
+struct GoalGlobal (size 0x7A)
+{
+	0x0000	Trigger	Trigger1
+	0x0006	Trigger	Trigger2
+	0x000E	BOOL	Trigger1OrTrigger2
+	0x000F	BOOL	Unknown1
+	0x0010	Trigger	Trigger3
+	0x0016	Trigger	Trigger4
+	0x001E	BOOL	Trigger3OrTrigger4
+	0x0027	BOOL	Unknown2
+	0x0031	BOOL	Triggers12OrTriggers34
+	0x0032	BYTE	Unknown3
+	0x0033	SBYTE	Points
+	0x0034	BYTE	Unknown4
+	0x0035	BYTE	Unknown5
+	0x0036	BYTE	Unknown6
+	0x0038	BYTE	ActiveSquence
+}
+
+struct Team (size 0x1E7)
+{
+	0x000	SHORT		Reserved (1)
+	0x002	STR(18)		Name
+	0x01A	BYTE[10]	Allegiances
+	0x024	CHAR[64][6]	EndOfMissionMessages
+	0x1A4	BYTE[6]		Unknowns
+	0x1AA	CHAR[20][3]	EomVoiceIDs
+}
+
+struct Briefing
+{
+	0x0000	SHORT	RunningTime
+	0x0002	SHORT	Unknown1
+	0x0004	SHORT	StartLength
+	0x0006	INT	EventsLength
+	0x000A	Event[]
+	0x440A	BOOL[10] ShowToTeams
+	0x4414	Tag[128]
+		String[128]
+}
+
+struct Event
+{
+	0x0	SHORT	Time
+	0x2	SHORT	Type (enum EventType)
+	0x4	SHORT[]	Variables
+}
+
+struct Tag
+{
+	0x0	SHORT	Length
+	0x2	CHAR[Length]
+}
+
+struct String
+{
+	0x0	SHORT	Length
+	0x2	CHAR[Length]
+}

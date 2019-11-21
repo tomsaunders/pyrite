@@ -1,0 +1,88 @@
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+:host {
+  display: block;
+
+  .image-wrapper {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 484px;
+    width: 800px;
+    position: relative;
+    // height: 100%;
+    // width: 100%;
+    overflow: hidden;
+    background-color: black;
+
+    &.Officer {
+      background-image: url("/assets/images/frown.jpg");
+    }
+
+    &.Secret {
+      background-image: url("/assets/images/priest.jpg");
+    }
+
+    .questions {
+      position: absolute;
+      right: 0;
+      bottom: 2px;
+      width: 460px;
+      min-height: 140px;
+      display: flex;
+      align-items: flex-end;
+      background: black;
+      opacity: 0.9;
+
+      ul {
+        list-style: none;
+        color: grey;
+        padding-inline-start: 0;
+        margin: 0;
+        padding: 0;
+
+        li:hover {
+          color: royalblue;
+        }
+      }
+    }
+
+    .answer {
+      position: absolute;
+      right: -20px;
+      padding-right: 20px;
+      box-sizing: content-box;
+      top: 0;
+      color: royalblue;
+      width: 400px;
+      height: 300px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      white-space: pre;
+    }
+  }
+
+  .tietext {
+    font-family: monospace;
+    font-size: 18px;
+  }
+
+  td,
+  th {
+    vertical-align: top;
+    padding: 1em;
+
+    &.type {
+      width: 15%;
+    }
+
+    &.question {
+      width: 35%;
+    }
+
+    &.answer {
+      width: 50%;
+      white-space: pre;
+    }
+  }
+}

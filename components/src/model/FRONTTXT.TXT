@@ -1,0 +1,792 @@
+// This is a comment for use in the front end
+// These strings do not have to be a fixed length
+Pilot Records
+Craft Database
+Fly Solo
+Join Game
+Host Game
+Configuration
+Exit To Windows
+// These strings must be a fixed length
+Pilot Statistics
+Pilot Rating
+Pilot Awards
+Mission Achievements
+Total Score
+Summary
+Melee
+Combat
+Craft Kills
+// This string must be formatted appropriately
+// to fit into the join game screen.
+Game Name                                   Players Needed           Last Query
+// This string must be a fixed length
+Name the Game Session
+// These strings do not need to be a fixed length
+Join
+Cancel
+Accessing Imperial Network...
+// These are the long names
+Unknown
+X-Wing
+Y-Wing
+A-Wing
+*B-Wing
+TIE Fighter
+TIE Interceptor
+TIE Bomber
+TIE Advanced
+*TIE Defender
+*tienew1
+*tienew2
+*Missile Boat
+T-Wing
+Z-95 Headhunter
+R-41 Starchaser
+Assault Gunboat
+Shuttle
+Escort Shuttle
+System Patrol Craft
+*Scout Craft
+Stormtrooper Transport
+Assault Transport
+Escort Transport
+Utility Tug
+Combat Utility Vehicle
+Container Class A
+Container Class B
+Container Class C
+Container Class D
+Heavy Lifter
+*bulk_barge2
+Bulk Freighter
+Cargo Ferry
+Modular Conveyor
+Container Transport
+*new_freighter3
+Muurian Transport
+Corellian Transport
+*Millenium
+Corellian Corvette
+*Modified Corvette
+Nebulon B Frigate
+*Modified Frigate
+*Passenger Liner
+*Carrack Cruiser
+Strike Cruiser
+Escort Carrier
+Dreadnaught
+Calamari Cruiser
+Lt. Calamari Cruiser
+Interdictor
+Victory Star Destroyer
+Imperial Star Destroyer
+*super_sd
+Container Class E
+Container Class F
+Container Class G
+Container Class H
+Container Class I
+XQ1 Platform
+XQ2 Platform
+XQ3 Platform
+XQ4 Platform
+XQ5 Platform
+XQ6 Platform
+Asteroid Hangar
+Asteroid Laser Battery
+Asteroid War Launcher
+X7 Factory
+Comm Sat
+Comm Sat
+*Sat3
+*Sat4
+*Sat5
+Mine Type A
+Mine Type B
+Mine Type C
+*Mine4
+*Mine5
+Probe
+*Probe2
+*Probe3
+Nav Buoy
+Nav Buoy
+*Pilot
+Asteroid
+Planet
+Obstacle
+// Rank names
+// These names must be less than 16 characters
+Target Drone
+Ground Crew
+Trainee
+Flight Cadet
+Officer 4th Class
+Officer 3rd Class
+Officer 2nd Class
+Officer 1st Class
+Veteran 4th Grade
+Veteran 3rd Grade
+Veteran 2nd Grade
+Veteran 1st Grade
+Ace 4th Level
+Ace 3rd Level
+Ace 2nd Level
+Ace 1st Level
+Top Ace 4th Order
+Top Ace 3rd Order
+Top Ace 2nd Order
+Top Ace 1st Order
+Jedi 4th Degree
+Jedi 3rd Degree
+Jedi 2nd Degree
+Jedi 1st Degree
+Jedi Master
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Drone
+Crew
+Trainee
+Cadet
+Of 4th
+Of 3rd
+Of 2nd
+Of 1st
+Vt 4th
+Vt 3rd
+Vt 2nd
+Vt 1st
+Ace 4th
+Ace 3rd
+Ace 2nd
+Ace 1st
+TAce 4th
+TAce 3rd
+TAce 2nd
+TAce 1st
+Jedi 4th
+Jedi 3rd
+Jedi 2nd
+Jedi 1st
+Jedi Mstr
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+Reserved Rank
+// More strings
+// These strings must be a fixed length
+PLAYERS
+Mission:
+DESCRIPTION
+Exercise
+Melees
+Combat Engagements
+Mission Description:
+Select Mission:
+// These strings do not need to be a fixed length
+Training Exercises
+Melees
+Tournaments
+Combat Engagements
+Battles
+Fly
+Players in Game:
+Players
+Settings
+Leave
+Prepare for launch.
+Done
+// This string must be a fixed length
+Briefing:
+// These strings do not need to be a fixed length
+Stop
+Forward
+Rewind
+Randomize
+Next
+Team Selection
+Auto Assign
+Clear List
+Abort
+// This string must be a fixed length
+Team
+// These strings do not need to be a fixed length
+Waiting for other teams....
+// These strings must be a fixed length
+Single Player Flight Engine Options
+Screen Resolution
+320 x 240
+512 x 384
+640 x 480
+Window Size
+320 x 240
+480 x 360
+640 x 480
+Starfield Density
+Low
+Medium
+High
+Number of Colors
+256
+65536
+Backdrop
+Off
+On
+Space Debris
+Local Light Source
+Specular Highlights
+Diffuse Lighting
+Dithering
+Texture Resolution
+Low
+Med
+High
+MIP Mapping
+Blurry
+Noisy
+Optimal
+Use Low Detail Models
+Near
+Far
+Off
+Brightness
+Dim
+Bright
+// These strings do not need to be a fixed length
+Return To Pilot Records
+Return To Join Game
+Return To Select Mission
+Return To Select Teams
+Return To Briefing and Pilot Assignment
+Craft Configuration
+// These strings must be a fixed length
+Warheads:
+Countermeasures:
+Beam Weapon:
+# of Waves:
+// These strings do not need to be a fixed length
+Next Craft Choice
+Previous Craft Choice
+Next Warhead Choice
+Next Countermeasure Choice
+Next Beam Weapon Choice
+// These strings must be a fixed length
+None
+Space Bombs
+Cluster Bombs
+Heavy Rockets
+Missiles
+Proton Torpedoes
+Advanced Missiles
+Advanced Torpedoes
+Mag Pulse
+Ion Pulse
+None
+Tractor
+Jamming
+Decoy
+Energy
+None
+Chaff
+Flare
+Cluster Mine
+// These strings do not need to be a fixed length
+Rotate X
+Rotate Y
+Change Lighting
+Next Craft
+Previous Craft
+// These strings must be a fixed length
+Total Kills:
+Total Shared Kills:
+Total Damaged:
+Total Inspected:
+Laser Hits:
+Warhead Hits:
+Craft Lost:
+// These strings do not need to be a fixed length
+Multiplayer Connection Options
+IPX
+TCP/IP
+Direct Modem
+// These strings must be a fixed length
+IP Address/Name
+Phone Number
+// These strings do not need to be a fixed length
+Sound Options
+Mission Overview
+Player Statistics
+Team Statistics
+Battle Summary
+Tournament Summary
+Continue Battle
+Continue Tournament
+1st
+2nd
+3rd
+4th
+5th
+6th
+7th
+8th
+Fail
+Comp
+Team
+Place
+Score
+Goals
+Awards
+Mission Score:
+Shared Kills:
+of
+Kills
+Inspected
+TOURNAMENT SCORE TOTALS
+After
+Missions
+Victories Needed To Win:
+Imperial Victories:
+Rebel Victories:
+Mission #
+Imperial Victory
+Rebel Victory
+Draw
+Pilot Rating:
+Advancement Toward Next Promotion:
+Summary Of Kills
+Player Kills:
+Non-Player Kills:
+Assists:
+Hidden Cargo Found:
+Laser Accuracy:
+Warhead Accuracy:
+Player Kills By Rank
+Craft Kills By Type
+Avgs Per Mission
+Total Losses
+Total Craft Losses:
+To Player Pilots:
+To Non-Player Pilots:
+To Starships:
+To Mines:
+From Collisions:
+Place:
+pilots.
+Result:
+Completed mission in
+Failed mission.
+Did not complete mission.
+minutes.
+Demotion:
+No Promotion:
+Promotion:
+Award:
+Melee Plaque
+Tournament Trophy
+Mission Evaluation
+Battle Medallion
+Gold
+Silver
+Bronze
+Nickel
+Copper
+Lead
+Losses From Players
+Leave Tournament
+Leave Battle
+Abort Tournament
+Abort Battle
+Cadet
+Officer
+Veteran
+Ace
+Top Ace
+Jedi
+Jedi Master
+Off
+Some
+All
+Volume Low
+Volume High
+Flight Engine Exterior SFX
+Cockpit Interior SFX
+Engine Sound
+Datapad SFX
+Pilot Messages
+Tactical Officer Messages
+Commander Messages
+Special Mission Messages
+Flight Engine Music
+Voice Volume
+Joystick Options
+Joystick Button #
+currently mapped to:
+Not mapped to a key.
+Firing
+Restore Defaults
+Difficulty:
+Starfighter Collisions:
+Craft Jumping:
+Randomize:
+Battle Length:
+Joining Game:
+In Progress Game:
+Craft Selection:
+Locate Players:
+Craft Waves:
+Mission Time Limit:
+Last Team Time Limit:
+Easy
+Medium
+Hard
+2 wins
+3 wins
+4 wins
+Open
+Require Password
+Open
+Closed
+Off
+Automatic
+None
+Default
+Unlimited
+Min.
+Direct Serial
+Mission History
+Single Player
+Multiplayer
+Training History
+Melee History
+Combat History
+Tournament History
+Battle History
+Best
+Score
+Time
+Finish
+Pilot Roster
+Delete Pilot
+Choose Teams
+Choose Sides
+Assign teams by dragging players' names into team slots.
+You are the host.
+Please wait while the host picks teams.
+'s Game
+Tournament Description:
+Battle Description:
+Captain
+Unassigned Players
+Go to Briefing
+Fly Again
+Select Connection Type
+General Connection Options
+Playing over the Internet?
+No
+Yes
+Game Session Password
+Designation:
+Manufacturer:
+In Use By:
+Special Characteristics:
+Speed:
+Acceleration:
+Manueverability Rating:
+Lasers:
+Std. Combat Warhead Load:
+Size:
+Crew:
+Shield rating:
+Hull rating:
+Starfighter
+Transport
+Utility Vehicle
+Freighter
+Starship
+Platform
+Player Projectile
+Other Projectile
+Mine
+Satellite
+Normal Debris
+Small Debris
+Backdrop
+Explosion
+Obstacle
+Surface
+People
+MGLT
+MGLT/second
+and
+Lasers
+Ion Cannons
+Single
+Dual
+Triple
+Quad
+km
+Okay
+You must select a pilot from
+the Pilot Roster or create
+a new one before continuing.
+Are you sure you want
+to delete this pilot?
+Yes
+No
+Remove Player From Game
+This mission only supports %d players.
+Remove some players before continuing.
+Losses To Players By Rank
+---
+Off
+On
+Host Only
+Deaths
+Kill Stats
+Killed By
+Killed
+The game you are trying to join is full.
+Please try another game.
+ 
+// The blank line is necessary.  Use the line for translation
+// if necessary for game slot is full dialog box.
+Your version of the program does not
+match the hosts.  Please verify that you
+have the correct program.
+This game requires a password.
+Please enter the correct password in
+the Network Configuration screen.
+This game has already started.
+Please select another game to join.
+ 
+// The blank line is necessary.  Use the line for translation
+// if necessary for game already started dialog box.
+You are currently in a game session.
+Are you sure you want to quit?
+ 
+// The blank line is necessary.  Use the line for translation
+// if necessary for in game session dialog box.
+You are currently hosting a game session.
+If you quit, the game will be aborted.
+Are you sure you want to quit?
+Play
+You have been booted by the host.
+Please choose another
+game to join.
+Pilots
+Craft
+Config
+Exit
+Previous
+Exit Configuration
+Exit Craft Database
+AI Opponents:
+# of Craft:
+Ready
+Reconfigure
+CRAFT
+Whd
+Bm
+Cm
+--
+SB
+CB
+HR
+M
+T
+AM
+AT
+MP
+IP
+--
+T
+J
+D
+E
+--
+C
+F
+M
+-- Not on your team. --
+Select your
+Select everybody's
+Host is selecting
+Craft selection is disabled.
+For Flight Group
+Craft Type
+Craft Review
+armaments
+Review your craft and armaments.
+craft
+X-W
+Y-W
+A-W
+*B-W
+T/F
+T/I
+T/B
+T/A
+*T/D
+*tienew1
+*tienew2
+*M-B
+T-W
+Z-95
+R-41
+GUN
+General
+Duty Roster
+Assigned Pilots
+Assign by dragging players' names into pilot slots.
+Please wait while the team captain assigns flight groups.
+The current game has been
+cancelled by the host.
+Please select another game.
+Are you sure you want to quit?
+
+
+// The two blank lines are necessary.  Use for translation of
+// the "Are you sure you want to quit?" dialog box if necessary.
+You have selected a single-player mission
+for a multiplayer game.
+Please select a multiplayer mission.
+Page #
+Multiplayer Flight Engine Options
+Rebel Pilot
+Imperial Pilot
+Achieved on Mission
+Connecting....
+Joystick POV
+Up
+Right
+Down
+Left
+Available Keys
+Remappable Buttons
+Select a button by picking from
+the list below or pressing one of
+your joystick buttons.  Then pick
+from the list of Available Keys
+to remap.
+Mission Settings:
+Quick Start
+Top Performance
+Excellent Performance
+Good Performance
+Fair Performance
+Adequate Performance
+Reprimand
+Continue
+Go to Craft Selection
+Restart
+Default to fire weapon.
+Default to roll/target in cursor.
+Press Alt-F4 to cancel connection attempt.
+Restoring defaults will erase any changes
+you have made to these settings.
+Are you sure you want to do this?
+There was a error while attempting
+to connect.  Please try again or
+select another game.
+You are currently playing a tournament.
+Are you sure you want to
+terminate this tournament?
+You are currently playing a battle.
+Are you sure you want to
+terminate this battle?
+Mission List
+Unassigned Players
+Tournament Winner
+Tournament Mission Overview
+Victorious Side
+Battle Mission Overview
+Victories Needed
+teams
+Connection Type - You cannot change these options while hosting or joining a network game.
+You have not entered an IP address for
+the TCP/IP connection.  Please enter one
+in the Configuration screen.
+You have not entered a phone number for
+the modem connection.  Please enter one
+in the Configuration screen.
+Total Score
+New Mission
+Disconnect
+Disconnect from game session.
+Help Text On
+Help Text Off
+Begin
+Failed to detect CD!
+Please insert the X-Wing Vs. TIE Fighter CD
+into your CD-ROM drive.
+Battle Completed
+Refly Battle Mission
+Refly
+// Meters
+meters
+RU
+DPF
+SBD
+Create a new pilot.
+Create Pilot
+Margin
+victs.
+Join in progress...
+Host Internet IPX Game
+Host Local IPX Game
+Host Internet TCP/IP Game
+Host Local TCP/IP Game
+Host Direct Modem Game
+Host Direct Serial Game
+Join Internet IPX Game
+Join Local IPX Game
+Join Internet TCP/IP Game
+Join Local TCP/IP Game
+Join Direct Modem Game
+Join Direct Serial Game
+You have been disconnected from
+Query All Games
+Datapad Music
+Random Mission:
+The host aborted the mission.
+However, you are still connected
+to the current game session.
+If attempt to connect to the TCP/IP address fails, timeout will occur in 2.5 minutes.
+You are a team captain.
+Host/Server Options
+Host/Server Update Rate
+Low
+Medium
+High
+Host Options - You are a client.  You cannot change these settings.
+Disconnecting from network.  Please wait....
+You switched to a Client CD.
+You cannot host a network game
+or fly solo with the Client CD.
+Are you sure you want to
+restart the game and return
+to Select Mission?
+Average Latency
+ms
+Connection Quality Rating
+Packets Dropped
+Imperial
+Rebel
+into your CD-ROM drive and press Enter.
+Direct Play Error:  Failed to Disconnect.
+Attempting to exit to Windows.
+Your computer may stop responding.
+CD Music Not Available.
+Make sure other CD audio playing applications
+like FlexiCD are not already running.
+3D Hardware
+Bilinear Filtering

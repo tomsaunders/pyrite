@@ -1,0 +1,9 @@
+<?php
+namespace Pyrite\PLATFORM;
+
+use Pyrite\Byteable;
+use Pyrite\HexDecoder;
+use Pyrite\PyriteBase;
+
+abstract class CLASSNAMEBase extends PyriteBase implements Byteable {
+	use HexDecoder;

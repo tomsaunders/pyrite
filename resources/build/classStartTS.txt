@@ -1,0 +1,6 @@
+import { Byteable } from "../../byteable";
+import { IMission, PyriteBase } from "../../pyrite-base";
+// tslint:disable member-ordering
+// tslint:disable prefer-const
+
+export abstract class CLASSNAMEBase extends PyriteBase implements Byteable {

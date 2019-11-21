@@ -1,0 +1,4 @@
+  public getLength(): number {
+    return LENPROP;
+  }
+}

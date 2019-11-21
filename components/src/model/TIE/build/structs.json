@@ -1,0 +1,1353 @@
+{
+    "Mission": {
+        "name": "Mission",
+        "size": 0,
+        "props": [
+            {
+                "name": "FileHeader",
+                "offset": "0x000",
+                "type": "FileHeader",
+                "size": 0,
+                "pv": false,
+                "debug": "this.FileHeader",
+                "comment": ""
+            },
+            {
+                "name": "FlightGroups",
+                "count": "this.FileHeader.NumFGs",
+                "offset": "offset",
+                "type": "FlightGroup",
+                "size": 0,
+                "pv": true,
+                "debug": "this.FlightGroups",
+                "comment": ""
+            },
+            {
+                "name": "Messages",
+                "count": "this.FileHeader.NumMessages",
+                "offset": "offset",
+                "type": "Message",
+                "size": 0,
+                "pv": true,
+                "debug": "this.Messages",
+                "comment": ""
+            },
+            {
+                "name": "GlobalGoals",
+                "count": "3",
+                "offset": "offset",
+                "type": "GlobalGoal",
+                "size": 0,
+                "pv": true,
+                "debug": "this.GlobalGoals",
+                "comment": ""
+            },
+            {
+                "name": "Briefing",
+                "offset": "offset",
+                "type": "Briefing",
+                "size": 0,
+                "pv": true,
+                "debug": "this.Briefing",
+                "comment": ""
+            },
+            {
+                "name": "PreMissionQuestions",
+                "count": "10",
+                "offset": "offset",
+                "type": "PreMissionQuestions",
+                "size": 0,
+                "pv": true,
+                "debug": "this.PreMissionQuestions",
+                "comment": ""
+            },
+            {
+                "name": "PostMissionQuestions",
+                "count": "10",
+                "offset": "offset",
+                "type": "PostMissionQuestions",
+                "size": 0,
+                "pv": true,
+                "debug": "this.PostMissionQuestions",
+                "comment": ""
+            },
+            {
+                "name": "End",
+                "offset": "offset",
+                "type": "BYTE",
+                "size": 1,
+                "pv": true,
+                "debug": "this.End",
+                "comment": " \/\/ Reserved(0xFF)"
+            }
+        ],
+        "funcs": []
+    },
+    "FileHeader": {
+        "name": "FileHeader",
+        "size": "0x1CA",
+        "props": [
+            {
+                "name": "PlatformID",
+                "offset": "0x000",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.PlatformID",
+                "comment": " \/\/ (-1)"
+            },
+            {
+                "name": "NumFGs",
+                "offset": "0x002",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.NumFGs",
+                "comment": ""
+            },
+            {
+                "name": "NumMessages",
+                "offset": "0x004",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.NumMessages",
+                "comment": ""
+            },
+            {
+                "name": "Reserved",
+                "offset": "0x006",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Reserved",
+                "comment": " \/\/ (3) might be # of GlobalGoals"
+            },
+            {
+                "name": "Unknown1",
+                "offset": "0x008",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown1",
+                "comment": ""
+            },
+            {
+                "name": "Unknown2",
+                "offset": "0x009",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown2",
+                "comment": ""
+            },
+            {
+                "name": "BriefingOfficers",
+                "offset": "0x00A",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.BriefingOfficersLabel",
+                "enum": "BriefingOfficers",
+                "comment": ""
+            },
+            {
+                "name": "CapturedOnEject",
+                "offset": "0x00D",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.CapturedOnEject",
+                "comment": ""
+            },
+            {
+                "name": "EndOfMissionMessages",
+                "count": "6",
+                "offset": "0x018",
+                "type": "CHAR<64>",
+                "size": "64",
+                "pv": false,
+                "debug": "this.EndOfMissionMessages",
+                "comment": ""
+            },
+            {
+                "name": "OtherIffNames",
+                "count": "4",
+                "offset": "0x19A",
+                "type": "CHAR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.OtherIffNames",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "FlightGroup": {
+        "name": "FlightGroup",
+        "size": "0x124",
+        "props": [
+            {
+                "name": "Name",
+                "offset": "0x000",
+                "type": "CHAR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.Name",
+                "comment": ""
+            },
+            {
+                "name": "Pilot",
+                "offset": "0x00C",
+                "type": "CHAR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.Pilot",
+                "comment": ""
+            },
+            {
+                "name": "Cargo",
+                "offset": "0x018",
+                "type": "CHAR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.Cargo",
+                "comment": ""
+            },
+            {
+                "name": "SpecialCargo",
+                "offset": "0x024",
+                "type": "CHAR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.SpecialCargo",
+                "comment": ""
+            },
+            {
+                "name": "SpecialCargoCraft",
+                "offset": "0x030",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.SpecialCargoCraft",
+                "comment": ""
+            },
+            {
+                "name": "RandomSpecialCargoCraft",
+                "offset": "0x031",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.RandomSpecialCargoCraft",
+                "comment": ""
+            },
+            {
+                "name": "CraftType",
+                "offset": "0x032",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.CraftTypeLabel",
+                "enum": "CraftType",
+                "comment": ""
+            },
+            {
+                "name": "NumberOfCraft",
+                "offset": "0x033",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.NumberOfCraft",
+                "comment": ""
+            },
+            {
+                "name": "Status",
+                "offset": "0x034",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.StatusLabel",
+                "enum": "Status",
+                "comment": ""
+            },
+            {
+                "name": "Warhead",
+                "offset": "0x035",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.WarheadLabel",
+                "enum": "Warhead",
+                "comment": ""
+            },
+            {
+                "name": "Beam",
+                "offset": "0x036",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.BeamLabel",
+                "enum": "Beam",
+                "comment": ""
+            },
+            {
+                "name": "Iff",
+                "offset": "0x037",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Iff",
+                "comment": ""
+            },
+            {
+                "name": "GroupAI",
+                "offset": "0x038",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.GroupAILabel",
+                "enum": "GroupAI",
+                "comment": ""
+            },
+            {
+                "name": "Markings",
+                "offset": "0x039",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.MarkingsLabel",
+                "enum": "Markings",
+                "comment": ""
+            },
+            {
+                "name": "ObeyPlayerOrders",
+                "offset": "0x03A",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ObeyPlayerOrders",
+                "comment": ""
+            },
+            {
+                "name": "Reserved1",
+                "offset": "0x03B",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Reserved1",
+                "comment": " \/\/ (0)  Unknown1 in TFW"
+            },
+            {
+                "name": "Formation",
+                "offset": "0x03C",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.FormationLabel",
+                "enum": "Formation",
+                "comment": ""
+            },
+            {
+                "name": "FormationSpacing",
+                "offset": "0x03D",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.FormationSpacing",
+                "comment": " \/\/ Unknown2"
+            },
+            {
+                "name": "GlobalGroup",
+                "offset": "0x03E",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.GlobalGroup",
+                "comment": " \/\/ Unknown3"
+            },
+            {
+                "name": "LeaderSpacing",
+                "offset": "0x03F",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.LeaderSpacing",
+                "comment": " \/\/ Unknown4"
+            },
+            {
+                "name": "NumberOfWaves",
+                "offset": "0x040",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.NumberOfWaves",
+                "comment": ""
+            },
+            {
+                "name": "Unknown5",
+                "offset": "0x041",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown5",
+                "comment": ""
+            },
+            {
+                "name": "PlayerCraft",
+                "offset": "0x042",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.PlayerCraft",
+                "comment": ""
+            },
+            {
+                "name": "Yaw",
+                "offset": "0x043",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Yaw",
+                "comment": " \/\/ Unknown6"
+            },
+            {
+                "name": "Pitch",
+                "offset": "0x044",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Pitch",
+                "comment": " \/\/ Unknown7"
+            },
+            {
+                "name": "Roll",
+                "offset": "0x045",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Roll",
+                "comment": " \/\/ Unknown8"
+            },
+            {
+                "name": "Unknown9",
+                "offset": "0x046",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown9",
+                "comment": ""
+            },
+            {
+                "name": "Unknown10",
+                "offset": "0x047",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown10",
+                "comment": ""
+            },
+            {
+                "name": "Reserved2",
+                "offset": "0x048",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Reserved2",
+                "comment": " \/\/ (0)  Unknown11"
+            },
+            {
+                "name": "ArrivalDifficulty",
+                "offset": "0x049",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ArrivalDifficultyLabel",
+                "enum": "ArrivalDifficulty",
+                "comment": ""
+            },
+            {
+                "name": "Arrival1",
+                "offset": "0x04A",
+                "type": "Trigger",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Arrival1",
+                "comment": ""
+            },
+            {
+                "name": "Arrival2",
+                "offset": "0x04E",
+                "type": "Trigger",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Arrival2",
+                "comment": ""
+            },
+            {
+                "name": "Arrival1OrArrival2",
+                "offset": "0x052",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Arrival1OrArrival2",
+                "comment": ""
+            },
+            {
+                "name": "Reserved3",
+                "offset": "0x053",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Reserved3",
+                "comment": " \/\/ (0)  Unknown12"
+            },
+            {
+                "name": "ArrivalDelayMinutes",
+                "offset": "0x054",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ArrivalDelayMinutes",
+                "comment": ""
+            },
+            {
+                "name": "ArrivalDelaySeconds",
+                "offset": "0x055",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ArrivalDelaySeconds",
+                "comment": ""
+            },
+            {
+                "name": "Departure",
+                "offset": "0x056",
+                "type": "Trigger",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Departure",
+                "comment": ""
+            },
+            {
+                "name": "DepartureDelayMinutes",
+                "offset": "0x05A",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.DepartureDelayMinutes",
+                "comment": " \/\/ Unknown13"
+            },
+            {
+                "name": "DepartureDelatSeconds",
+                "offset": "0x05B",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.DepartureDelatSeconds",
+                "comment": " \/\/ Unknown14"
+            },
+            {
+                "name": "AbortTrigger",
+                "offset": "0x05C",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.AbortTriggerLabel",
+                "enum": "AbortTrigger",
+                "comment": ""
+            },
+            {
+                "name": "Reserved4",
+                "offset": "0x05D",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Reserved4",
+                "comment": " \/\/ (0)  Unknown15"
+            },
+            {
+                "name": "Unknown16",
+                "offset": "0x05E",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown16",
+                "comment": ""
+            },
+            {
+                "name": "Reserved5",
+                "offset": "0x05F",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Reserved5",
+                "comment": " \/\/ (0)  Unknown17"
+            },
+            {
+                "name": "ArrivalMothership",
+                "offset": "0x060",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ArrivalMothership",
+                "comment": ""
+            },
+            {
+                "name": "ArriveViaMothership",
+                "offset": "0x061",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ArriveViaMothership",
+                "comment": ""
+            },
+            {
+                "name": "DepartureMothership",
+                "offset": "0x062",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.DepartureMothership",
+                "comment": ""
+            },
+            {
+                "name": "DepartViaMothership",
+                "offset": "0x063",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.DepartViaMothership",
+                "comment": ""
+            },
+            {
+                "name": "AlternateArrivalMothership",
+                "offset": "0x064",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.AlternateArrivalMothership",
+                "comment": ""
+            },
+            {
+                "name": "AlternateArriveViaMothership",
+                "offset": "0x065",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.AlternateArriveViaMothership",
+                "comment": ""
+            },
+            {
+                "name": "AlternateDepartureMothership",
+                "offset": "0x066",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.AlternateDepartureMothership",
+                "comment": ""
+            },
+            {
+                "name": "AlternateDepartViaMothership",
+                "offset": "0x067",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.AlternateDepartViaMothership",
+                "comment": ""
+            },
+            {
+                "name": "Orders",
+                "count": "3",
+                "offset": "0x068",
+                "type": "Order",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Orders",
+                "comment": ""
+            },
+            {
+                "name": "FlightGroupGoals",
+                "count": "4",
+                "offset": "0x09E",
+                "type": "GoalFG",
+                "size": 0,
+                "pv": false,
+                "debug": "this.FlightGroupGoals",
+                "comment": ""
+            },
+            {
+                "name": "BonusGoalPoints",
+                "offset": "0x0A6",
+                "type": "SBYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.BonusGoalPoints",
+                "comment": ""
+            },
+            {
+                "name": "Waypoints",
+                "count": "4",
+                "offset": "0x0A8",
+                "type": "Waypt",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Waypoints",
+                "comment": ""
+            },
+            {
+                "name": "Unknown19",
+                "offset": "0x120",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown19",
+                "comment": ""
+            },
+            {
+                "name": "Unknown20",
+                "offset": "0x122",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown20",
+                "comment": ""
+            },
+            {
+                "name": "Unknown21",
+                "offset": "0x123",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown21",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Trigger": {
+        "name": "Trigger",
+        "size": "0x4",
+        "props": [
+            {
+                "name": "Condition",
+                "offset": "0x0",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ConditionLabel",
+                "enum": "Condition",
+                "comment": ""
+            },
+            {
+                "name": "VariableType",
+                "offset": "0x1",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.VariableTypeLabel",
+                "enum": "VariableType",
+                "comment": ""
+            },
+            {
+                "name": "Variable",
+                "offset": "0x2",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Variable",
+                "comment": ""
+            },
+            {
+                "name": "TriggerAmount",
+                "offset": "0x3",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.TriggerAmountLabel",
+                "enum": "TriggerAmount",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Order": {
+        "name": "Order",
+        "size": "0x12",
+        "props": [
+            {
+                "name": "Order",
+                "offset": "0x00",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.OrderLabel",
+                "enum": "Order",
+                "comment": ""
+            },
+            {
+                "name": "Throttle",
+                "offset": "0x01",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Throttle",
+                "comment": ""
+            },
+            {
+                "name": "Variable1",
+                "offset": "0x02",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Variable1",
+                "comment": ""
+            },
+            {
+                "name": "Variable2",
+                "offset": "0x03",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Variable2",
+                "comment": ""
+            },
+            {
+                "name": "Unknown18",
+                "offset": "0x04",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Unknown18",
+                "comment": ""
+            },
+            {
+                "name": "Target3Type",
+                "offset": "0x06",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target3TypeLabel",
+                "enum": "VariableType",
+                "comment": ""
+            },
+            {
+                "name": "Target4Type",
+                "offset": "0x07",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target4TypeLabel",
+                "enum": "VariableType",
+                "comment": ""
+            },
+            {
+                "name": "Target3",
+                "offset": "0x08",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target3",
+                "comment": ""
+            },
+            {
+                "name": "Target4",
+                "offset": "0x09",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target4",
+                "comment": ""
+            },
+            {
+                "name": "Target3OrTarget4",
+                "offset": "0x0A",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target3OrTarget4",
+                "comment": ""
+            },
+            {
+                "name": "Target1Type",
+                "offset": "0x0C",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target1TypeLabel",
+                "enum": "VariableType",
+                "comment": ""
+            },
+            {
+                "name": "Target1",
+                "offset": "0x0D",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target1",
+                "comment": ""
+            },
+            {
+                "name": "Target2Type",
+                "offset": "0x0E",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target2TypeLabel",
+                "enum": "VariableType",
+                "comment": ""
+            },
+            {
+                "name": "Target2",
+                "offset": "0x0F",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target2",
+                "comment": ""
+            },
+            {
+                "name": "Target1OrTarget2",
+                "offset": "0x10",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Target1OrTarget2",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Waypt": {
+        "name": "Waypt",
+        "size": "0x1E",
+        "props": [
+            {
+                "name": "StartPoints",
+                "count": "4",
+                "offset": "0x00",
+                "type": "SHORT",
+                "size": 8,
+                "pv": false,
+                "debug": "this.StartPoints",
+                "comment": ""
+            },
+            {
+                "name": "Waypoints",
+                "count": "8",
+                "offset": "0x08",
+                "type": "SHORT",
+                "size": 16,
+                "pv": false,
+                "debug": "this.Waypoints",
+                "comment": ""
+            },
+            {
+                "name": "Rendezvous",
+                "offset": "0x18",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Rendezvous",
+                "comment": ""
+            },
+            {
+                "name": "Hyperspace",
+                "offset": "0x1A",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Hyperspace",
+                "comment": ""
+            },
+            {
+                "name": "Briefing",
+                "offset": "0x1C",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Briefing",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "GoalFG": {
+        "name": "GoalFG",
+        "size": "0x2",
+        "props": [
+            {
+                "name": "Condition",
+                "offset": "0x0",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.ConditionLabel",
+                "enum": "Condition",
+                "comment": ""
+            },
+            {
+                "name": "GoalAmount",
+                "offset": "0x1",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.GoalAmountLabel",
+                "enum": "GoalAmount",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Message": {
+        "name": "Message",
+        "size": "0x5A",
+        "props": [
+            {
+                "name": "Message",
+                "offset": "0x00",
+                "type": "STR<64>",
+                "size": "64",
+                "pv": false,
+                "debug": "this.Message",
+                "comment": ""
+            },
+            {
+                "name": "Triggers",
+                "count": "2",
+                "offset": "0x40",
+                "type": "Trigger",
+                "size": "0x4",
+                "pv": false,
+                "debug": "this.Triggers",
+                "comment": ""
+            },
+            {
+                "name": "EditorNote",
+                "offset": "0x48",
+                "type": "STR<12>",
+                "size": "12",
+                "pv": false,
+                "debug": "this.EditorNote",
+                "comment": ""
+            },
+            {
+                "name": "DelaySeconds",
+                "offset": "0x58",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.DelaySeconds",
+                "comment": ""
+            },
+            {
+                "name": "Trigger1OrTrigger2",
+                "offset": "0x59",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Trigger1OrTrigger2",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "GlobalGoal": {
+        "name": "GlobalGoal",
+        "size": "0x1C",
+        "props": [
+            {
+                "name": "Triggers",
+                "count": "2",
+                "offset": "0x00",
+                "type": "Trigger",
+                "size": "0x4",
+                "pv": false,
+                "debug": "this.Triggers",
+                "comment": ""
+            },
+            {
+                "name": "Trigger1OrTrigger2",
+                "offset": "0x19",
+                "type": "BOOL",
+                "size": 1,
+                "pv": false,
+                "debug": "this.Trigger1OrTrigger2",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Briefing": {
+        "name": "Briefing",
+        "size": 0,
+        "props": [
+            {
+                "name": "RunningTime",
+                "offset": "0x000",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.RunningTime",
+                "comment": ""
+            },
+            {
+                "name": "Unknown",
+                "offset": "0x002",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Unknown",
+                "comment": ""
+            },
+            {
+                "name": "StartLength",
+                "offset": "0x004",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.StartLength",
+                "comment": ""
+            },
+            {
+                "name": "EventsLength",
+                "offset": "0x006",
+                "type": "INT",
+                "size": 4,
+                "pv": false,
+                "debug": "this.EventsLength",
+                "comment": " \/\/ Number of shorts used for events."
+            },
+            {
+                "name": "Events",
+                "count": "0",
+                "offset": "0x00A",
+                "type": "Event",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Events",
+                "comment": " \/\/ Set to 0 and impossible to generate in the same way, needs custom implementation"
+            },
+            {
+                "name": "Tags",
+                "count": "32",
+                "offset": "0x32A",
+                "type": "Tag",
+                "size": 0,
+                "pv": false,
+                "debug": "this.Tags",
+                "comment": ""
+            },
+            {
+                "name": "Strings",
+                "count": "32",
+                "offset": "offset",
+                "type": "TIEString",
+                "size": 0,
+                "pv": true,
+                "debug": "this.Strings",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "Event": {
+        "name": "Event",
+        "size": 0,
+        "props": [
+            {
+                "name": "Time",
+                "offset": "0x0",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Time",
+                "comment": ""
+            },
+            {
+                "name": "EventType",
+                "offset": "0x2",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.EventTypeLabel",
+                "enum": "EventType",
+                "comment": ""
+            },
+            {
+                "name": "Variables",
+                "count": "this.VariableCount()",
+                "offset": "0x4",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Variables",
+                "comment": ""
+            }
+        ],
+        "funcs": [
+            "VariableCount()"
+        ]
+    },
+    "Tag": {
+        "name": "Tag",
+        "size": 0,
+        "props": [
+            {
+                "name": "Length",
+                "offset": "0x0",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Length",
+                "comment": ""
+            },
+            {
+                "name": "Text",
+                "offset": "0x2",
+                "type": "CHAR<Length>",
+                "size": "this.Length",
+                "pv": false,
+                "debug": "this.Text",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "TIEString": {
+        "name": "TIEString",
+        "size": 0,
+        "props": [
+            {
+                "name": "Length",
+                "offset": "0x0",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Length",
+                "comment": ""
+            },
+            {
+                "name": "Text",
+                "offset": "0x2",
+                "type": "CHAR<Length>",
+                "size": "this.Length",
+                "pv": false,
+                "debug": "this.Text",
+                "comment": ""
+            }
+        ],
+        "funcs": []
+    },
+    "PreMissionQuestions": {
+        "name": "PreMissionQuestions",
+        "size": 0,
+        "props": [
+            {
+                "name": "Length",
+                "offset": "0x0",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Length",
+                "comment": ""
+            },
+            {
+                "name": "Question",
+                "offset": "0x2",
+                "type": "CHAR<QuestionLength()>",
+                "size": "this.QuestionLength()",
+                "pv": false,
+                "debug": "this.Question",
+                "comment": ""
+            },
+            {
+                "name": "Reserved",
+                "offset": "offset",
+                "type": "BYTE",
+                "size": 1,
+                "pv": true,
+                "debug": "this.Reserved",
+                "comment": " \/\/ (0xA)"
+            },
+            {
+                "name": "Answer",
+                "offset": "offset",
+                "type": "CHAR<AnswerLength()>",
+                "size": "this.AnswerLength()",
+                "pv": true,
+                "debug": "this.Answer",
+                "comment": ""
+            }
+        ],
+        "funcs": [
+            "QuestionLength()",
+            "AnswerLength()"
+        ]
+    },
+    "PostMissionQuestions": {
+        "name": "PostMissionQuestions",
+        "size": 0,
+        "props": [
+            {
+                "name": "Length",
+                "offset": "0x0",
+                "type": "SHORT",
+                "size": 2,
+                "pv": false,
+                "debug": "this.Length",
+                "comment": ""
+            },
+            {
+                "name": "QuestionCondition",
+                "offset": "0x2",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.QuestionConditionLabel",
+                "enum": "QuestionCondition",
+                "comment": ""
+            },
+            {
+                "name": "QuestionType",
+                "offset": "0x3",
+                "type": "BYTE",
+                "size": 1,
+                "pv": false,
+                "debug": "this.QuestionTypeLabel",
+                "enum": "QuestionType",
+                "comment": ""
+            },
+            {
+                "name": "Question",
+                "offset": "0x4",
+                "type": "CHAR<QuestionLength()>",
+                "size": "this.QuestionLength()",
+                "pv": false,
+                "debug": "this.Question",
+                "comment": ""
+            },
+            {
+                "name": "Reserved",
+                "offset": "offset",
+                "type": "BYTE",
+                "size": 1,
+                "pv": true,
+                "debug": "this.Reserved",
+                "comment": " \/\/ (0xA)"
+            },
+            {
+                "name": "Answer",
+                "offset": "offset",
+                "type": "CHAR<AnswerLength()>",
+                "size": "this.AnswerLength()",
+                "pv": true,
+                "debug": "this.Answer",
+                "comment": ""
+            }
+        ],
+        "funcs": [
+            "QuestionLength()",
+            "AnswerLength()"
+        ]
+    }
+}

@@ -1,0 +1,192 @@
+struct Mission
+{
+	0x000 FileHeader FileHeader
+	PV FlightGroup[FileHeader-NumFGs] FlightGroups
+	PV Message[FileHeader-NumMessages] Messages
+	PV GlobalGoal[3] GlobalGoals
+	PV Briefing Briefing
+	PV PreMissionQuestions[10] PreMissionQuestions
+	PV PostMissionQuestions[10] PostMissionQuestions
+	PV BYTE	End Reserved(0xFF)
+}
+
+struct FileHeader (size 0x1CA)
+{
+	0x000	SHORT	PlatformID (-1)
+	0x002	SHORT	NumFGs
+	0x004	SHORT	NumMessages
+	0x006	SHORT	Reserved (3)		might be # of GlobalGoals
+	0x008	BYTE	Unknown1
+	0x009	BOOL	Unknown2
+	0x00A	BYTE	BriefingOfficers (enum)
+	0x00D	BOOL	CapturedOnEject
+	0x018	CHAR<64>[6]	EndOfMissionMessages
+	0x19A	CHAR<12>[4]	OtherIffNames
+}
+
+struct FlightGroup (size 0x124)
+{
+	0x000	CHAR<12> Name
+	0x00C	CHAR<12> Pilot
+	0x018	CHAR<12> Cargo
+	0x024	CHAR<12> SpecialCargo
+	0x030	BYTE	SpecialCargoCraft
+	0x031	BOOL	RandomSpecialCargoCraft
+	0x032	BYTE	CraftType (enum)
+	0x033	BYTE	NumberOfCraft
+	0x034	BYTE	Status (enum)
+	0x035	BYTE	Warhead (enum)
+	0x036	BYTE	Beam (enum)
+	0x037	BYTE	Iff
+	0x038	BYTE	GroupAI (enum)
+	0x039	BYTE	Markings (enum)
+	0x03A	BOOL	ObeyPlayerOrders
+	0x03B	BYTE	Reserved1 (0)			Unknown1 in TFW
+	0x03C	BYTE	Formation (enum)
+	0x03D	BYTE	FormationSpacing		Unknown2
+	0x03E	BYTE	GlobalGroup			Unknown3
+	0x03F	BYTE	LeaderSpacing			Unknown4
+	0x040	BYTE	NumberOfWaves
+	0x041	BYTE	Unknown5
+	0x042	BYTE	PlayerCraft
+	0x043	BYTE	Yaw				Unknown6
+	0x044	BYTE	Pitch				Unknown7
+	0x045	BYTE	Roll				Unknown8
+	0x046	BOOL	Unknown9
+	0x047	BYTE	Unknown10
+	0x048	BYTE	Reserved2 (0)			Unknown11
+	0x049	BYTE	ArrivalDifficulty (enum)
+	0x04A	Trigger	Arrival1
+	0x04E	Trigger	Arrival2
+	0x052	BOOL	Arrival1OrArrival2
+	0x053	BYTE	Reserved3 (0)			Unknown12
+	0x054	BYTE	ArrivalDelayMinutes
+	0x055	BYTE	ArrivalDelaySeconds
+	0x056	Trigger	Departure
+	0x05A	BYTE	DepartureDelayMinutes		Unknown13
+	0x05B	BYTE	DepartureDelatSeconds		Unknown14
+	0x05C	BYTE	AbortTrigger (enum)
+	0x05D	BYTE	Reserved4 (0)			Unknown15
+	0x05E	BYTE	Unknown16
+	0x05F	BYTE	Reserved5 (0)			Unknown17
+	0x060	BYTE	ArrivalMothership
+	0x061	BOOL	ArriveViaMothership
+	0x062	BYTE	DepartureMothership
+	0x063	BOOL	DepartViaMothership
+	0x064	BYTE	AlternateArrivalMothership
+	0x065	BOOL	AlternateArriveViaMothership
+	0x066	BYTE	AlternateDepartureMothership
+	0x067	BOOL	AlternateDepartViaMothership
+	0x068	Order[3] Orders
+	0x09E	GoalFG[4] FlightGroupGoals
+	0x0A6	SBYTE	BonusGoalPoints
+	0x0A8	Waypt[4] Waypoints
+	0x120	BOOL	Unknown19
+	0x122	BYTE	Unknown20
+	0x123	BOOL	Unknown21
+}
+
+struct Trigger (size 0x4)
+{
+	0x0	BYTE	Condition (enum)
+	0x1	BYTE	VariableType (enum)
+	0x2	BYTE	Variable
+	0x3	BYTE	TriggerAmount (enum)
+}
+
+struct Order (size 0x12)
+{
+	0x00	BYTE	Order (enum)
+	0x01	BYTE	Throttle
+	0x02	BYTE	Variable1
+	0x03	BYTE	Variable2
+	0x04	BYTE	Unknown18
+	0x06	BYTE	Target3Type (enum VariableType)
+	0x07	BYTE	Target4Type (enum VariableType)
+	0x08	BYTE	Target3
+	0x09	BYTE	Target4
+	0x0A	BOOL	Target3OrTarget4
+	0x0C	BYTE	Target1Type (enum VariableType)
+	0x0D	BYTE	Target1
+	0x0E	BYTE	Target2Type (enum VariableType)
+	0x0F	BYTE	Target2
+	0x10	BOOL	Target1OrTarget2
+}
+
+struct Waypt (size 0x1E)
+{
+	0x00	SHORT[4] StartPoints
+	0x08	SHORT[8] Waypoints
+	0x18	SHORT	Rendezvous
+	0x1A	SHORT	Hyperspace
+	0x1C	SHORT	Briefing
+}
+
+struct GoalFG (size 0x2)
+{
+	0x0	BYTE	Condition (enum)
+	0x1	BYTE	GoalAmount (enum)
+}
+
+struct Message (size 0x5A)
+{
+	0x00	STR<64>	Message
+	0x40	Trigger[2] Triggers
+	0x48	STR<12>	EditorNote
+	0x58	BYTE	DelaySeconds
+	0x59	BOOL	Trigger1OrTrigger2
+}
+
+struct GlobalGoal (size 0x1C)
+{
+	0x00	Trigger[2] Triggers
+	0x19	BOOL	Trigger1OrTrigger2
+}
+
+struct Briefing
+{
+	0x000	SHORT	RunningTime
+	0x002	SHORT	Unknown
+	0x004	SHORT	StartLength
+	0x006	INT	EventsLength Number of shorts used for events.
+	0x00A	Event[0] Events Set to 0 and impossible to generate in the same way, needs custom implementation
+	0x32A	Tag[32] Tags
+	PV	TIEString[32] Strings
+}
+
+struct Event
+{
+	0x0	SHORT	Time
+	0x2	SHORT	EventType (enum)
+	0x4	SHORT[VariableCount()]	Variables
+}
+
+struct Tag
+{
+	0x0	SHORT	Length
+	0x2	CHAR<Length> Text
+}
+
+struct TIEString
+{
+	0x0	SHORT	Length
+	0x2	CHAR<Length> Text
+}
+
+struct PreMissionQuestions
+{
+	0x0	SHORT	Length
+	0x2	CHAR<QuestionLength()>	Question
+	PV	BYTE	Reserved (0xA)
+	PV	CHAR<AnswerLength()>	Answer
+}
+
+struct PostMissionQuestions
+{
+	0x0	SHORT	Length
+	0x2	BYTE	QuestionCondition (enum)
+	0x3	BYTE	QuestionType (enum)
+	0x4	CHAR<QuestionLength()>	Question
+	PV	BYTE	Reserved (0xA)
+	PV	CHAR<AnswerLength()>	Answer
+}

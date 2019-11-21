@@ -1,0 +1,37 @@
+{
+  "name": "pyrite",
+  "private": true,
+  "version": "0.0.1",
+  "description": "pyrite",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "collection": "dist/collection/collection-manifest.json",
+  "types": "dist/types/components.d.ts",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@ionic/core": "^4.6.0-dev.201906131724.645b9a9",
+    "@types/node": "^12.6.8",
+    "redux": "^4.0.1",
+    "three": "^0.106.2",
+    "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@stencil/core": "^1.1.4",
+    "@stencil/redux": "^0.1.1",
+    "@stencil/sass": "^1.0.1",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/html": "^5.1.9",
+    "prettier": "^1.18.2"
+  }
+}
