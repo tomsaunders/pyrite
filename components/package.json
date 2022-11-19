@@ -31,7 +31,7 @@
     "@stencil/redux": "^0.1.1",
     "@stencil/sass": "^1.0.1",
     "@storybook/addon-knobs": "^5.1.9",
-    "@storybook/html": "^5.1.9",
+    "@storybook/html": "^6.5.13",
     "prettier": "^1.18.2"
   }
 }
